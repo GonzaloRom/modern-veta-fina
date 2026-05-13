@@ -12,14 +12,15 @@ interface HeroProps {
 
 const SLIDES = [
   {
+    
     img: '/img/inicio1.jpg',
-    tag: 'Sofás a Medida',
-    title: 'El sofá que imaginaste,',
-    highlight: 'creado para vos.',
-    sub: 'Maderas nobles, tapizados premium y un equipo que convierte tu visión en el mueble perfecto.',
+    tag: 'Diseño Exclusivo',
+    title: 'Tu espacio merece,',
+    highlight: 'lo extraordinario.',
+    sub: 'Asesoramiento personalizado, materiales de primera calidad y fabricación artesanal bajo tu medida.',
   },
   {
-    img: '/img/inicio2.jpg',
+    img: '/img/ratonera6.jpg',
     tag: 'Mesas Artesanales',
     title: 'Cada mesa cuenta',
     highlight: 'una historia única.',
@@ -27,11 +28,10 @@ const SLIDES = [
   },
   {
     img: '/img/inicio3.jpg',
-    tag: 'Diseño Exclusivo',
-    title: 'Tu espacio merece',
-    highlight: 'lo extraordinario.',
-    sub: 'Asesoramiento personalizado, materiales de primera calidad y fabricación artesanal bajo tu medida.',
-  },
+    tag: 'Elegancia Artesanal',
+    title: 'Transformá tu hogar con',
+    highlight: 'diseño que inspira.',
+    sub: 'Mesas exclusivas creadas en madera maciza, combinando estilo, calidad premium y terminaciones únicas para convertir cada reunión en un momento especial.',}
 ];
 
 export default function Hero({ onNavigate }: HeroProps) {
