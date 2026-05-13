@@ -42,20 +42,25 @@ export default function Navbar({ darkMode, onToggleDark, currentSection, onNavig
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${navBase}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <button
-            onClick={() => handleNav('inicio')}
-            className="flex flex-col items-start leading-none group"
-          >
-            <span className={`font-serif text-2xl md:text-3xl font-bold tracking-widest transition-colors ${textColor}`}>
-              VETA FINA
-            </span>
-            <span className={`text-[10px] tracking-[0.3em] uppercase font-sans font-light transition-colors ${
-              scrolled || mobileOpen ? 'text-gold-500 dark:text-gold-400' : 'text-gold-300'
-            }`}>
-              Muebles a Medida
-            </span>
-          </button>
+                   {/* Logo con borde súper ajustado */}
+            <button
+              onClick={() => handleNav('inicio')}
+              className="flex flex-col items-start leading-none group"
+            >
+              <div
+                className={`border-4 px-2 py-0 rounded transition-colors duration-300 ${
+                  scrolled || mobileOpen
+                    ? 'border-warm-800 dark:border-cream-100'
+                    : 'border-cream-50'
+                }`}
+              >
+                <span
+                  className={`font-serif text-2xl md:text-3xl font-bold tracking-widest leading-none transition-colors ${textColor}`}
+                >
+                  VETA FINA
+                </span>
+              </div>
+            </button>
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
